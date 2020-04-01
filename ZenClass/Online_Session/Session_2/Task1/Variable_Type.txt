@@ -1,0 +1,38 @@
+<html>
+<body>
+<script>
+var a = 1;
+out1 = typeof (a);
+console.log(out1);
+
+var b = 1.1;
+out2 = typeof (b);
+console.log(out2);
+
+var c = "Bag";
+out3 = typeof (c);
+console.log(out3);
+
+var d = null;
+out4 = typeof (d);
+console.log(out4);
+
+var e = undefined;
+out5 = typeof (e);
+console.log(out5);
+
+var f = true;
+out6 = typeof (f);
+console.log(out6);
+
+var g = false;
+out7 = typeof (g);
+console.log(out7);
+
+var h = ["1",2,3,4];
+out8 = typeof (h);
+console.log(out8);
+
+</script>
+</body>
+</html>
