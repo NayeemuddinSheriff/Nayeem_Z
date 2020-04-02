@@ -33,6 +33,10 @@ var h = ["1",2,3,4];
 out8 = typeof (h);
 console.log(out8);
 
+var i = function(){};	
+out9 = typeof (i);
+console.log(out9);
+
 </script>
 </body>
 </html>
