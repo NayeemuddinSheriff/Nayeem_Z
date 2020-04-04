@@ -1,0 +1,45 @@
+<html>
+<body>
+<script>
+var library = [
+    {
+        title: "JavaScript",
+        price: 500,
+        readers: [
+            {
+                name: "Person 1",
+                count: 300
+            },
+            {
+                name: "Person 2",
+                count: 400
+            }
+        ],
+        authorDetails: {
+            name: "Raj",
+            age: 40
+        }
+    },
+    {
+        title: "Nodejs",
+        price: 600,
+        readers: [],
+        authorDetails: {
+            name: "Raj",
+            age: 40
+        }
+    }
+]
+
+//3A. Print the price of JavaScript book in console.
+console.log(library[0].price)
+//3B. Print the age Nodejs Author in console.
+console.log(library[1].authorDetails.age)
+//3C. Print how many readers for javascript in console.
+console.log(library[0].readers.length)
+//3D. Print the count value of Person 2 in console.
+console.log(library[0].readers[1].count)
+
+</script>
+</body>
+</html>
