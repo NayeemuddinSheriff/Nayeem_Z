@@ -1,0 +1,17 @@
+//Write a function which will get two parameters and return a sum of it.
+
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+function add2numbes(x,y){
+return x+y;
+}
+var z = add2numbes(10,11);
+console.log(z)
+</script>
+</head>
+<body>
+</body>
+</html>
