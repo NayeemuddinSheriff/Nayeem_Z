@@ -1,0 +1,50 @@
+//Write a program to create a calculator with all arithmetic operations has functions;
+
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+operation = prompt("Enter the operation you need to perform - add/sub/mul/div/mod");
+
+function add(x,y){
+var z = x+y;
+console.log(z);
+}
+function sub(x,y){
+var z = x-y;
+console.log(z);
+}
+function mul(x,y){
+var z = x*y;
+console.log(z);
+}
+function div(x,y){
+var z = x/y;
+console.log(z);
+}
+function mod(x,y){
+var z = x%y;
+console.log(z);
+}
+if(operation == 'add'){
+    add(20,11);
+}
+if(operation == 'sub'){
+    sub(20,11);
+}
+if(operation == 'mul'){
+    mul(40,21);
+}
+if(operation == 'div'){
+    div(10,11);
+}
+if(operation == 'mod'){
+    mod(100,51);
+}
+
+</script>
+</head>
+<body>
+</body>
+</html>
