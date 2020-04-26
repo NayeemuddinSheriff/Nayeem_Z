@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+
+var array = [[['firstName', 'Vasanth'], ['lastName', 'Raja'], ['age', 24], ['role', 'JSWizard']], [['firstName', 'Sri'], ['lastName', 'Devi'], ['age', 28], ['role', 'Coder']]];
+
+function fromListToObject(obj){
+    var output = []
+    var output1 = []
+    var result = []
+    for (var i=0 ; i <=3 ; i++)
+    {
+            output[[array[0][i][0]]] = array[0][i][1]
+            output1[[array[1][i][0]]] = array[1][i][1]
+    }
+    var arrayToString = JSON.stringify(Object.assign({}, output));  // convert array to string
+    var stringToJsonObject = JSON.parse(arrayToString);
+    var arrayToString1 = JSON.stringify(Object.assign({}, output1));  // convert array to string
+    var stringToJsonObject1 = JSON.parse(arrayToString1);
+    result.push(stringToJsonObject,stringToJsonObject1)
+    console.log(result)
+}
+
+fromListToObject(array);
+
+</script>
+</head>
+<body>
+</body>
+</html>
