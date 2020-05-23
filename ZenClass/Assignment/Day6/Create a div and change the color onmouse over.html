@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+    <div id="mydiv" style="width:200px;background:white" >
+        Color will change
+    </div>
+
+<script>
+    var item = document.getElementById("mydiv");
+    item.addEventListener("mouseover", mouseover, true);
+    item.addEventListener("mouseout", mouseout, false);
+
+function mouseover()
+{  
+   var item = document.getElementById("mydiv");
+   item.setAttribute("style", "background-color:blue;")
+}
+
+function mouseout()
+{  
+   var item = document.getElementById("mydiv");
+   item.setAttribute("style", "background-color:white;")
+}
+</script>
+</head>
+<body>
+</body>
+</html>
