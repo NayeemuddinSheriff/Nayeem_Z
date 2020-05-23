@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+"use strict";
+var zipcode = {
+    checkZipcode : function() {
+        console.log(this);
+        var updateZipCode = function() {
+            console.log(this);
+        }.bind(this);
+        updateZipCode();
+    }
+}
+zipcode.checkZipcode();
+</script>
+</head>
+<body>
+</body>
+</html>
