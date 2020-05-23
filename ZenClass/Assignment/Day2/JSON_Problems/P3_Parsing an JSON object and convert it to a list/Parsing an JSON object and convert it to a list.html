@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+
+var object = {name: 'ISRO', age: 35, role: 'Scientist'};
+
+function convertListToObject(obj){
+    var output = []
+    for (i in object)
+    {
+    var key = i;
+    var value = object[i]
+    output.push([key,value])
+    }
+    console.log(output);
+}
+
+convertListToObject(object);
+
+</script>
+</head>
+<body>
+</body>
+</html>

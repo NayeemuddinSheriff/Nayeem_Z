@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+
+var array = [['make', 'Ford'], ['model', 'Mustang'], ['year', 1964]];
+
+function fromListToObject(obj){
+    var output = []
+    for (i in array)
+    {
+    output[array[i][0]] = array[i][1]
+    }
+    console.log(output)
+    
+}
+
+fromListToObject(array);
+
+</script>
+</head>
+<body>
+</body>
+</html>

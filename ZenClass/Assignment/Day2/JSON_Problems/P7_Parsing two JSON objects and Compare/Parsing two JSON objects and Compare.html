@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+
+var expected = {foo: 5, bar: 6};
+var actual = {foo: 5, bar: 5}
+
+function assertObjectsEqual(actual, expected, testName){
+    var objectToString = JSON.stringify(expected);  // convert array to string
+
+    var objectToString1 = JSON.stringify(actual);  // convert array to string
+
+    if(objectToString == objectToString1)
+    {
+        console.log("Passed")
+    }
+    else
+    {
+        console.log('FAILED', testName, 'Expected',expected,', but got',actual)
+    }
+}
+
+assertObjectsEqual(actual, expected, 'detects that two objects are equal')
+
+</script>
+</head>
+<body>
+</body>
+</html>
