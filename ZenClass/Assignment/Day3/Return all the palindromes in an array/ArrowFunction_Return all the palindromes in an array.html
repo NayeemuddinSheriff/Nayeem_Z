@@ -1,0 +1,24 @@
+<html>
+<body>
+<script>
+//ArrowFunction
+var palindrome = (a) =>
+{
+    var output = []
+    for(i=0 ; i<a.length; i++)
+    {
+        var b = a[i]
+        var c = b.split('').reverse().join('')
+
+        if(c == a[i])
+        {
+            output.push(a[i])
+        }
+    }
+    console.log(output)
+}
+
+palindrome(["nayeem","wow","mom"])
+</script>
+</body>
+</html>

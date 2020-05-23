@@ -1,0 +1,25 @@
+<html>
+<body>
+<script>
+//IIFE
+(
+    function(a)
+{
+    var output = []
+    for(i=0 ; i<a.length; i++)
+    {
+        var b = a[i]
+        var c = b.split('').reverse().join('')
+
+        if(c == a[i])
+        {
+            output.push(a[i])
+        }
+    }
+    console.log(output)
+}
+)
+(["nayeem","wow","mom"])
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<body>
+<script>
+//Arrow Function
+var titlecaps = (a) =>
+{
+    var array = []
+    for(var i=0;i<a.length;i++)
+    { 
+        var b = ""
+        for(var j=0;j<a[i].length;j++)
+        {
+            if(j==0)
+            {
+                b = b + a[i][j].toUpperCase()
+            }
+            else
+            {
+            b = b + a[i][j]
+            }
+        }
+        array.push(b);
+
+    }
+    return array;
+}
+ 
+var result=titlecaps(["guvi","geek","zen","class"])
+console.log(result)
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<body>
+<script>
+//AnonymousFunction
+var duplicate = function (a) {
+    console.log("The raw array",a)
+    var output = []
+    var n=a.length;
+    for(var i = 0; i < n; i++)
+    {
+        for(var j = i+1; j < n; )
+        {
+            if(a[j] == a[i])
+            {
+              for(var k = j; k < n; k++)
+                {
+                    a[k] = a[k+1];
+                }
+                n--;
+            }
+            else
+            {
+                j++;
+            }
+        }
+    }
+
+   for(var i = 0; i < n; i++)
+    {
+        output.push(a[i])
+    }
+    console.log("Removed Duplicate",output);
+}
+
+duplicate([4,7,3,8,4,6,7,6])
+</script>
+</body>
+</html>

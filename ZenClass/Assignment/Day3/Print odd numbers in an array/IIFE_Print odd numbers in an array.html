@@ -1,0 +1,21 @@
+<html>
+<body>
+<script>
+//IIFE
+(
+    function(a){
+    var output = []
+    console.log("The odd numbers till", a , "are")
+    for(i=0; i <= a; i++)
+    {
+        if (i%2 != 0)
+        {
+            output.push(i)
+        }
+    }
+    console.log(output)
+}
+)(50)
+</script>
+</body>
+</html>

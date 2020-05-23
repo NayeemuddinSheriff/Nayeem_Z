@@ -1,0 +1,30 @@
+<html>
+<body>
+<script>
+//IIFE
+(
+function(a)
+{
+    var array = []
+    for(var i=0;i<a.length;i++)
+    { 
+        var b = ""
+        for(var j=0;j<a[i].length;j++)
+        {
+            if(j==0)
+            {
+                b = b + a[i][j].toUpperCase()
+            }
+            else
+            {
+            b = b + a[i][j]
+            }
+        }
+        array.push(b)
+    }
+    console.log(array)
+}
+)(["guvi","geek","zen","class"])
+</script>
+</body>
+</html>
