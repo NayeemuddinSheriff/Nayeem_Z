@@ -1,0 +1,142 @@
+/* page steup */
+.layout {
+    height: auto;
+    width: 590px;
+    /* to centre page on screen*/
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+/* below is to organize the grids */
+.grid-item1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'one two'
+        'three three'
+        'four four'
+        'five  six'
+        'seven seven'
+        'eight eight'
+        'nine ten';
+    grid-gap: 10px;
+    background-color: #121A13;
+    padding: 10px;
+}
+
+.grid-container>div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* text-align: center; */
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+/* creating class for each grid with BG color */
+.itemh {
+    grid-area: header;
+    background-color: #121A13;
+}
+
+.item1 {
+    grid-area: one;
+    background-color: darkorange;
+}
+
+.item2 {
+    grid-area: two;
+    background-color: #2C73D2;
+}
+
+.item3 {
+    grid-area: three;
+    background-color: tomato;
+}
+
+.item4 {
+    grid-area: four;
+    background-color: #2C73D2;
+}
+
+.item5 {
+    grid-area: five;
+    background-color: tomato;
+}
+
+.item6 {
+    grid-area: six;
+    background-color: darkorange;
+}
+
+.item7 {
+    grid-area: seven;
+    background-color: #2C73D2;
+}
+
+.item8 {
+    grid-area: eight;
+    background-color: darkorange;
+}
+
+.item9 {
+    grid-area: nine;
+    background-color: #2C73D2;
+}
+
+.item10 {
+    grid-area: ten;
+    background-color: darkorange;
+}
+
+/* font styles */
+#header {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 50px;
+    letter-spacing: 2.8px;
+    word-spacing: 1px;
+    color: #FF3423;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+/* Defining Height of Each grid header,one,two.... */
+.headersize {
+    height: 100px;
+}
+
+.onesize {
+    height: 200px;
+}
+
+/* ICONS */
+
+#balance {
+    font-size: 50px;
+    vertical-align: middle;
+    color: darkturquoise;
+    border: floralwhite;
+}
+
+#smile {
+    color: ghostwhite;
+}
+
+#sad {
+    color: #BB4430;
+}
+
+#fork {
+    color: honeydew;
+}
