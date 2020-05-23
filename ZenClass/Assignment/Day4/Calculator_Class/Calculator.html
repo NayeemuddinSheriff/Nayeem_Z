@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+<script>
+operation = prompt("Enter the operation you need to perform - add/sub/mul/div/mod");
+
+class calculator
+{
+add(x,y){
+var z = x+y;
+console.log(z);
+}
+sub(x,y){
+var z = x-y;
+console.log(z);
+}
+mul(x,y){
+var z = x*y;
+console.log(z);
+}
+div(x,y){
+var z = x/y;
+console.log(z);
+}
+mod(x,y){
+var z = x%y;
+console.log(z);
+}
+}
+
+calc = new calculator;
+
+if(operation == 'add'){
+    calc.add(20,11);
+}
+if(operation == 'sub'){
+    calc.sub(20,11);
+}
+if(operation == 'mul'){
+    calc.mul(40,21);
+}
+if(operation == 'div'){
+    calc.div(10,11);
+}
+if(operation == 'mod'){
+    calc.mod(100,51);
+}
+</script>
+</head>
+<body>
+</body>
+</html>
